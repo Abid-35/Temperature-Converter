@@ -32,15 +32,20 @@ A simple and clean temperature converter built using **HTML, CSS, and JavaScript
 
 ---
 
+## 🔢 Conversion Formulas
 
+### 1. Celsius to Fahrenheit and Kelvin
+Fahrenheit = (Celsius × 9/5) + 32
+Kelvin = Celsius + 273.15
 
-## 🛠️ How to Run This Project
+### 2. Fahrenheit to Celsius and Kelvin
+Celsius = (Fahrenheit − 32) × 5/9
+Kelvin = ((Fahrenheit − 32) × 5/9) + 273.15
 
-1. Clone the repo or download the code
-2. Open `index.html` in your browser
-3. Try entering values and switching between units
+### 3. Kelvin to Celsius and Fahrenheit
+Celsius = Kelvin − 273.15
+Fahrenheit = ((Kelvin − 273.15) × 9/5) + 32
 
----
 
 ## 📚 Example Conversion
 
@@ -51,6 +56,13 @@ If you enter `45` as:
 | Fahrenheit | 7.22         | 45.00            | 280.37     |
 | Celsius    | 45.00        | 113.00           | 318.15     |
 | Kelvin     | -228.15      | -348.67          | 45.00      |
+
+---
+## 🛠️ How to Run This Project
+
+1. Clone the repo or download the code
+2. Open `index.html` in your browser
+3. Try entering values and switching between units
 
 ---
 
@@ -69,6 +81,3 @@ This project was created as part of web development practice.
 
 ---
 
-## 🧑‍💻 Author
-
-Built by **Abid** – aspiring developer and creative builder.  
