@@ -4,42 +4,60 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
-body {
-  font-family: Arial, sans-serif;
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
   background-color: #f1f5f9;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-}
-html , body{
-  overflow-x: hidden;
 }
 
 .converter {
   background: #ffffff;
-  padding: 20px 25px;
+  padding: 20px;
   border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 320px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 input[type="number"] {
-display: block;
-margin: 15px auto;
-padding: 10px;
-font-size: 16px;
-width: 90%;
-max-width: 250px;
-border: 1px solid #ccc;
-border-radius: 5px;
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .radio-buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 8px;
   margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.radio-buttons label {
+  flex: 1;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: #f1f1f1;
+  padding: 6px;
+  border-radius: 5px;
+  white-space: nowrap;
+  min-width: 80px;
+}
+
+.radio-buttons input[type="radio"] {
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 button {
@@ -58,4 +76,6 @@ button {
   font-weight: bold;
   color: #333;
   white-space: pre-line;
+  min-height: 60px;
 }
+
